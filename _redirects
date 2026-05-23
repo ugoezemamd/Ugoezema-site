@@ -43,4 +43,4 @@
 /the-last-zebra-episodes     /the-last-zebra-episodes.html    200
 
 # Catch-all 404
-/*  /404.html  404
+/*  /404.html  200
