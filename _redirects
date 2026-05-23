@@ -1,0 +1,46 @@
+# Cloudflare Pages / Netlify redirects
+# Format: SOURCE  DESTINATION  STATUS
+
+# Old WordPress URL renames
+/podcasts          /the-last-zebra           301
+/podcasts/         /the-last-zebra           301
+/newsletter        /doc-populi               301
+/newsletter/       /doc-populi               301
+
+# Common legacy WordPress paths (in case any existed)
+/blog              /doc-populi               301
+/blog/*            /doc-populi               301
+/posts             /doc-populi               301
+/posts/*           /doc-populi               301
+/articles          /doc-populi               301
+/articles/*        /doc-populi               301
+
+# Old WordPress feed URLs — point to Doc Populi
+/feed              /doc-populi               301
+/feed/             /doc-populi               301
+/?feed=rss2        /doc-populi               301
+
+# Pretty URLs without .html (trailing-slash optional)
+/about/            /about.html               301
+/about             /about.html               200
+/doc-populi/       /doc-populi.html          301
+/doc-populi        /doc-populi.html          200
+/the-last-zebra/   /the-last-zebra.html      301
+/the-last-zebra    /the-last-zebra.html      200
+/contact/          /contact.html             301
+/contact           /contact.html             200
+
+# Doc Populi sub-pages
+/doc-populi-archive          /doc-populi-archive.html         200
+/doc-populi-start-here       /doc-populi-start-here.html      200
+/doc-populi-reading-list     /doc-populi-reading-list.html    200
+/doc-populi-medicine-practice       /doc-populi-medicine-practice.html       200
+/doc-populi-healthcare-systems      /doc-populi-healthcare-systems.html      200
+/doc-populi-wellness-human-future   /doc-populi-wellness-human-future.html   200
+/doc-populi-culture-story           /doc-populi-culture-story.html           200
+
+# The Last Zebra episodes
+/the-last-zebra-episodes     /the-last-zebra-episodes.html    200
+
+# Catch-all 404
+/*  /404.html  404
